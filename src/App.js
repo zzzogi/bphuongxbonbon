@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import About from "./components/About";
+import CountdownSection from "./components/CountdownSection";
+import Footer from "./components/Footer";
+import Gallery from "./components/Gallery";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import OurStory from "./components/OurStory";
+import Testimonials from "./components/Testimonials";
+import Timeline from "./components/Timeline";
 
 function App() {
+  //start date 29/04/2024
+  const startDate = new Date(2024, 3, 29, 0, 0, 0);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Hero />
+      <About />
+      <OurStory />
+      <Timeline />
+      <Gallery />
+      <CountdownSection startDate={startDate} />
+      <Testimonials />
+      <Footer />
     </div>
   );
 }
