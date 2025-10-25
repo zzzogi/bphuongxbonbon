@@ -5,13 +5,13 @@ function Testimonials() {
         "Nhìn hai bạn bên nhau thật hạnh phúc, chúc hai bạn mãi mãi vui vẻ và bên nhau nhé!",
       author: "Binny",
       relation: "Đồng niên của 2 bạn",
-      avatar: "/bphuongxbonbon/assets/images/avatar/binny.jpg",
+      avatar: "/assets/images/avatar/binny.jpg",
     },
     {
       quote:
         "Cặp đôi hoàn hảo! Chúc hai iem luôn hạnh phúc và tràn đầy yêu thương.",
       author: "Chị Bông",
-      avatar: "/bphuongxbonbon/assets/images/avatar/bong.jpg",
+      avatar: "/assets/images/avatar/bong.jpg",
       relation: "Chị gái",
     },
     {
@@ -24,14 +24,14 @@ function Testimonials() {
       quote: "Cặp đôi này hồi sinh niềm tin của tôi vào tình yêu đôi lứa",
       author: "Anh Quyền",
       relation: "Anh zai",
-      avatar: "/bphuongxbonbon/assets/images/avatar/quyen.jpg",
+      avatar: "/assets/images/avatar/quyen.jpg",
     },
     {
       quote:
         "Quá đáng yêu, có thể nói là cặp đôi đáng yêu nhất mà tôi từng thấy!",
       author: "Chị Diệu",
       relation: "Chị gái",
-      avatar: "/bphuongxbonbon/assets/images/avatar/dieu.jpg",
+      avatar: "/assets/images/avatar/dieu.jpg",
     },
     {
       quote:
@@ -59,7 +59,7 @@ function Testimonials() {
                 <img
                   src={
                     testimonial.avatar ||
-                    "/bphuongxbonbon/assets/images/avatar/default-avatar.jpg"
+                    "/assets/images/avatar/default-avatar.jpg"
                   }
                   alt={testimonial.author}
                   className="avatar"

@@ -2,27 +2,27 @@ function OurStory() {
   const memories = [
     {
       id: 1,
-      image: "/bphuongxbonbon/assets/images/carousel/carousel-1.jpg",
+      image: "/assets/images/carousel/carousel-1.jpg",
       month: "❄️",
     },
     {
       id: 2,
-      image: "/bphuongxbonbon/assets/images/carousel/carousel-2.jpg",
+      image: "/assets/images/carousel/carousel-2.jpg",
       month: "💝",
     },
     {
       id: 3,
-      image: "/bphuongxbonbon/assets/images/carousel/carousel-3.jpg",
+      image: "/assets/images/carousel/carousel-3.jpg",
       month: "🌸",
     },
     {
       id: 4,
-      image: "/bphuongxbonbon/assets/images/carousel/carousel-4.jpg",
+      image: "/assets/images/carousel/carousel-4.jpg",
       month: "🌼",
     },
     {
       id: 5,
-      image: "/bphuongxbonbon/assets/images/carousel/carousel-5.jpg",
+      image: "/assets/images/carousel/carousel-5.jpg",
       month: "🌺",
     },
   ];

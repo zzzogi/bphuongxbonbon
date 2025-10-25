@@ -13,7 +13,7 @@ function About() {
           <div className="about-card bon-card">
             <div className="card-image">
               <img
-                src={"/bphuongxbonbon/assets/images/about/bon.jpg"}
+                src={"/assets/images/about/bon.jpg"}
                 alt="Nguyễn Hữu Đức Anh - Bon"
                 className="about-img"
               />
@@ -41,7 +41,7 @@ function About() {
           <div className="about-card bphuong-card">
             <div className="card-image">
               <img
-                src={"/bphuongxbonbon/assets/images/about/bphuong.jpg"}
+                src={"/assets/images/about/bphuong.jpg"}
                 alt="Nguyễn Hà Bảo Phương - Bphuong"
                 className="about-img"
               />
