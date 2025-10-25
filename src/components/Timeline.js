@@ -1,4 +1,6 @@
 import { useEffect, useRef } from "react";
+import OptimizedImage from "./OptimizedImage";
+import OptimizedVideo from "./OptimizedVideo";
 
 function Timeline() {
   const videoRef = useRef(null);
@@ -72,7 +74,7 @@ function Timeline() {
         "Những cuộc gọi lúc nửa đêm, những bức thư viết tay, và đếm từng ngày chờ đợi. Bphuong chờ với niềm tin vững chắc. Bon tập luyện chăm chỉ, mang tình yêu của em làm sức mạnh.",
       icon: "📱",
       side: "right",
-      image: "/assets/images/timeline/timeline-7.jpg",
+      image: "/assets/images/timeline/timeline-4.jpg",
       type: "image",
     },
     {
@@ -82,7 +84,7 @@ function Timeline() {
         "Trong khi Bon cống hiến bản thân để phục vụ đất nước, Bphuong hy sinh thời gian của mình, một mình đối mặt với mọi thứ. Em hiểu rằng yêu một chiến sĩ công an nghĩa là phải đón nhận cả niềm tự hào lẫn sự hy sinh.",
       icon: "🛡️",
       side: "left",
-      image: "/assets/images/timeline/timeline-6.jpg",
+      image: "/assets/images/timeline/timeline-5.jpg",
       type: "image",
       highlight: true,
     },
@@ -93,7 +95,7 @@ function Timeline() {
         "Sau 5 tháng xa cách, họ đã chứng minh rằng tình yêu đích thực có thể vượt qua mọi khoảng cách. Tình cảm của họ càng thêm bền chặt, cam kết càng sâu sắc hơn. Họ đã làm được.",
       icon: "🎉",
       side: "right",
-      image: "/assets/images/timeline/timeline-8.jpg",
+      image: "/assets/images/timeline/timeline-6.jpg",
       type: "image",
     },
   ];
@@ -130,19 +132,18 @@ function Timeline() {
               <div className="journey-content">
                 <div className="journey-media-wrapper">
                   {event.type === "video" ? (
-                    <video
+                    <OptimizedVideo
+                      src={event.video}
                       ref={videoRef}
                       className="journey-video"
                       loop
                       muted
                       playsInline
                       preload="metadata"
-                    >
-                      <source src={event.video} type="video/mp4" />
-                      Trình duyệt của bạn không hỗ trợ video.
-                    </video>
+                      autoplay
+                    />
                   ) : (
-                    <img
+                    <OptimizedImage
                       src={event.image}
                       alt={event.title}
                       className="journey-image"

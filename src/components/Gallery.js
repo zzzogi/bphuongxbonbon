@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, useCallback, useMemo } from "react";
+import OptimizedImage from "./OptimizedImage";
 
 function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -165,7 +166,7 @@ function Gallery() {
               onClick={() => openLightbox(memory)}
             >
               <div className="gallery-image-wrapper">
-                <img
+                <OptimizedImage
                   src={memory.image}
                   alt={memory.title}
                   className="gallery-img"
